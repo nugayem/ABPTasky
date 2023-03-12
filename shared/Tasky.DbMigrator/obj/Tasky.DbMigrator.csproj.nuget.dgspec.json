@@ -1,0 +1,1315 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Tutorial\\Tasky\\shared\\Tasky.DbMigrator\\Tasky.DbMigrator.csproj": {}
+  },
+  "projects": {
+    "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Application.Contracts\\Tasky.AdministrationService.Application.Contracts.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Application.Contracts\\Tasky.AdministrationService.Application.Contracts.csproj",
+        "projectName": "Tasky.AdministrationService.Application.Contracts",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Application.Contracts\\Tasky.AdministrationService.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\administration\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\Tasky.AdministrationService.Domain.Shared.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\Tasky.AdministrationService.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.Authorization": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Ddd.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.FeatureManagement.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.SettingManagement.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\Tasky.AdministrationService.Domain.Shared.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\Tasky.AdministrationService.Domain.Shared.csproj",
+        "projectName": "Tasky.AdministrationService.Domain.Shared",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\Tasky.AdministrationService.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\administration\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.Extensions.FileProviders.Embedded": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.AuditLogging.Domain.Shared": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.FeatureManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.SettingManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Validation": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain\\Tasky.AdministrationService.Domain.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain\\Tasky.AdministrationService.Domain.csproj",
+        "projectName": "Tasky.AdministrationService.Domain",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain\\Tasky.AdministrationService.Domain.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\administration\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\Tasky.AdministrationService.Domain.Shared.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain.Shared\\Tasky.AdministrationService.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.AuditLogging.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Ddd.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.FeatureManagement.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.SettingManagement.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.EntityFrameworkCore\\Tasky.AdministrationService.EntityFrameworkCore.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.EntityFrameworkCore\\Tasky.AdministrationService.EntityFrameworkCore.csproj",
+        "projectName": "Tasky.AdministrationService.EntityFrameworkCore",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.EntityFrameworkCore\\Tasky.AdministrationService.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\administration\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain\\Tasky.AdministrationService.Domain.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Domain\\Tasky.AdministrationService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.AuditLogging.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore.PostgreSql": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.FeatureManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.PermissionManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.SettingManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Application.Contracts\\Tasky.IdentityService.Application.Contracts.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Application.Contracts\\Tasky.IdentityService.Application.Contracts.csproj",
+        "projectName": "Tasky.IdentityService.Application.Contracts",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Application.Contracts\\Tasky.IdentityService.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\identity\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\Tasky.IdentityService.Domain.Shared.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\Tasky.IdentityService.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.Authorization": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Ddd.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Identity.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\Tasky.IdentityService.Domain.Shared.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\Tasky.IdentityService.Domain.Shared.csproj",
+        "projectName": "Tasky.IdentityService.Domain.Shared",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\Tasky.IdentityService.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\identity\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.Extensions.FileProviders.Embedded": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.Identity.Domain.Shared": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.IdentityServer.Domain.Shared": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Validation": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain\\Tasky.IdentityService.Domain.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain\\Tasky.IdentityService.Domain.csproj",
+        "projectName": "Tasky.IdentityService.Domain",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain\\Tasky.IdentityService.Domain.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\identity\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\Tasky.IdentityService.Domain.Shared.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain.Shared\\Tasky.IdentityService.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Volo.Abp.Ddd.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Identity.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.IdentityServer.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.Identity": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.IdentityServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.EntityFrameworkCore\\Tasky.IdentityService.EntityFrameworkCore.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.EntityFrameworkCore\\Tasky.IdentityService.EntityFrameworkCore.csproj",
+        "projectName": "Tasky.IdentityService.EntityFrameworkCore",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.EntityFrameworkCore\\Tasky.IdentityService.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\identity\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain\\Tasky.IdentityService.Domain.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Domain\\Tasky.IdentityService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore.PostgreSql": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.IdentityServer.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.PermissionManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Application.Contracts\\Tasky.SaaSService.Application.Contracts.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Application.Contracts\\Tasky.SaaSService.Application.Contracts.csproj",
+        "projectName": "Tasky.SaaSService.Application.Contracts",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Application.Contracts\\Tasky.SaaSService.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\saas\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\Tasky.SaaSService.Domain.Shared.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\Tasky.SaaSService.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.Authorization": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Ddd.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.TenantManagement.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\Tasky.SaaSService.Domain.Shared.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\Tasky.SaaSService.Domain.Shared.csproj",
+        "projectName": "Tasky.SaaSService.Domain.Shared",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\Tasky.SaaSService.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\saas\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.Extensions.FileProviders.Embedded": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.TenantManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Validation": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain\\Tasky.SaaSService.Domain.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain\\Tasky.SaaSService.Domain.csproj",
+        "projectName": "Tasky.SaaSService.Domain",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain\\Tasky.SaaSService.Domain.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\saas\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\Tasky.SaaSService.Domain.Shared.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain.Shared\\Tasky.SaaSService.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Volo.Abp.Ddd.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.TenantManagement.Domain": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.EntityFrameworkCore\\Tasky.SaaSService.EntityFrameworkCore.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.EntityFrameworkCore\\Tasky.SaaSService.EntityFrameworkCore.csproj",
+        "projectName": "Tasky.SaaSService.EntityFrameworkCore",
+        "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.EntityFrameworkCore\\Tasky.SaaSService.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Tutorial\\Tasky\\services\\saas\\NuGet.Config",
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain\\Tasky.SaaSService.Domain.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Domain\\Tasky.SaaSService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ConfigureAwait.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.5.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore.PostgreSql": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.TenantManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\shared\\Tasky.DbMigrator\\Tasky.DbMigrator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\shared\\Tasky.DbMigrator\\Tasky.DbMigrator.csproj",
+        "projectName": "Tasky.DbMigrator",
+        "projectPath": "C:\\Tutorial\\Tasky\\shared\\Tasky.DbMigrator\\Tasky.DbMigrator.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\shared\\Tasky.DbMigrator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Application.Contracts\\Tasky.AdministrationService.Application.Contracts.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.Application.Contracts\\Tasky.AdministrationService.Application.Contracts.csproj"
+              },
+              "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.EntityFrameworkCore\\Tasky.AdministrationService.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\administration\\src\\Tasky.AdministrationService.EntityFrameworkCore\\Tasky.AdministrationService.EntityFrameworkCore.csproj"
+              },
+              "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Application.Contracts\\Tasky.IdentityService.Application.Contracts.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.Application.Contracts\\Tasky.IdentityService.Application.Contracts.csproj"
+              },
+              "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.EntityFrameworkCore\\Tasky.IdentityService.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\identity\\src\\Tasky.IdentityService.EntityFrameworkCore\\Tasky.IdentityService.EntityFrameworkCore.csproj"
+              },
+              "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Application.Contracts\\Tasky.SaaSService.Application.Contracts.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.Application.Contracts\\Tasky.SaaSService.Application.Contracts.csproj"
+              },
+              "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.EntityFrameworkCore\\Tasky.SaaSService.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\services\\saas\\src\\Tasky.SaaSService.EntityFrameworkCore\\Tasky.SaaSService.EntityFrameworkCore.csproj"
+              },
+              "C:\\Tutorial\\Tasky\\shared\\Tasky.Shared.Hosting\\Tasky.Shared.Hosting.csproj": {
+                "projectPath": "C:\\Tutorial\\Tasky\\shared\\Tasky.Shared.Hosting\\Tasky.Shared.Hosting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tutorial\\Tasky\\shared\\Tasky.Shared.Hosting\\Tasky.Shared.Hosting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tutorial\\Tasky\\shared\\Tasky.Shared.Hosting\\Tasky.Shared.Hosting.csproj",
+        "projectName": "Tasky.Shared.Hosting",
+        "projectPath": "C:\\Tutorial\\Tasky\\shared\\Tasky.Shared.Hosting\\Tasky.Shared.Hosting.csproj",
+        "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
+        "outputPath": "C:\\Tutorial\\Tasky\\shared\\Tasky.Shared.Hosting\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "IdentityModel": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.AspNetCore.Serilog": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Autofac": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore.PostgreSql": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.EventBus.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Http.Client.IdentityModel.Web": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Volo.Abp.Identity.HttpApi.Client": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Localization": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.MultiTenancy": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.Swashbuckle": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Volo.Abp.TenantManagement.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

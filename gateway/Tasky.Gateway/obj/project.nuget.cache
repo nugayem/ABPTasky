@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "19jOYzaaYWIdTofvYN27HLFTbjMyD1ljPROPPCeLV7qTBRZ2lEnAXbit/Aq34VHBYarBxY7GsFakJfRWHABTJw==",
+  "success": true,
+  "projectFilePath": "C:\\Tutorial\\Tasky\\gateway\\Tasky.Gateway\\Tasky.Gateway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sammy\\.nuget\\packages\\system.io.hashing\\7.0.0\\system.io.hashing.7.0.0.nupkg.sha512",
+    "C:\\Users\\sammy\\.nuget\\packages\\yarp.reverseproxy\\2.0.0\\yarp.reverseproxy.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

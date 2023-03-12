@@ -1,0 +1,741 @@
+2023-02-25 16:24:42.430 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-25 16:24:42.437 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-25 16:24:42.541 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+2023-02-25 16:24:42.543 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-25 16:34:08.818 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-25 16:34:08.826 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-25 16:34:08.926 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-25 16:34:08.926 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-26 01:33:56.575 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:33:56.584 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-26 01:33:56.681 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+2023-02-26 01:33:56.681 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-26 01:34:55.013 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:34:55.022 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-26 01:34:55.121 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+2023-02-26 01:34:55.122 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-26 01:36:33.477 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:36:33.485 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-26 01:36:33.501 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:36:33.501 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-26 01:37:03.067 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:37:03.077 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-26 01:37:03.175 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+2023-02-26 01:37:03.176 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-26 01:38:33.341 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:38:33.345 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:38:33.350 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-26 01:38:33.351 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-26 01:39:38.172 -05:00 [ERR] An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:39:38.172 -05:00 [ERR] An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository.
+ ---> Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.Castle.DynamicProxy.AbpAsyncDeterminationInterceptor`1[[Volo.Abp.Uow.UnitOfWorkInterceptor, Volo.Abp.Uow, Version=7.0.1.0, Culture=neutral, PublicKeyToken=null]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_1`3.<EnableInterfaceInterceptors>b__2(Service s)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at Autofac.Extras.DynamicProxy.RegistrationExtensions.<>c__DisplayClass8_0`3.<EnableInterfaceInterceptors>b__1(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2023-02-26 01:39:38.188 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.PermissionManagement.StaticPermissionSaver -> Volo.Abp.PermissionManagement.EntityFrameworkCore.EfCorePermissionGroupDefinitionRecordRepository
+
+2023-02-26 01:39:38.189 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.FeatureManagement.StaticFeatureSaver -> Volo.Abp.FeatureManagement.EntityFrameworkCore.EfCoreFeatureGroupDefinitionRecordRepository
+
+2023-02-26 01:58:46.476 -05:00 [INF] Migrating Host side...
+2023-02-26 01:58:46.487 -05:00 [INF] Migrating SaaSService database...
+2023-02-26 01:58:49.305 -05:00 [INF] Migrating AdministrationService database...
+2023-02-26 01:58:50.027 -05:00 [INF] Migrating IdentityService database...
+2023-02-26 01:58:51.734 -05:00 [INF] All databases have been successfully migrated (HOST).
+2023-02-26 01:58:54.055 -05:00 [INF] Migrating tenants...
+2023-02-26 01:58:54.550 -05:00 [INF] Migration completed!
+2023-03-04 15:41:09.649 -05:00 [INF] Migrating Host side...
+2023-03-04 15:41:09.681 -05:00 [INF] Migrating SaaSService database...
+2023-03-04 15:41:11.624 -05:00 [INF] Migrating AdministrationService database...
+2023-03-04 15:41:12.052 -05:00 [INF] Migrating IdentityService database...
+2023-03-04 15:41:13.136 -05:00 [INF] All databases have been successfully migrated (HOST).
+2023-03-04 15:41:15.637 -05:00 [INF] Migrating tenants...
+2023-03-04 15:41:16.086 -05:00 [INF] Migration completed!
+2023-03-04 15:55:39.131 -05:00 [INF] Migrating Host side...
+2023-03-04 15:55:39.162 -05:00 [INF] Migrating SaaSService database...
+2023-03-04 15:55:41.534 -05:00 [INF] Migrating AdministrationService database...
+2023-03-04 15:55:41.976 -05:00 [INF] Migrating IdentityService database...
+2023-03-04 15:55:43.001 -05:00 [INF] All databases have been successfully migrated (HOST).
+2023-03-04 15:55:45.070 -05:00 [INF] Migrating tenants...
+2023-03-04 15:55:45.299 -05:00 [INF] Migration completed!
+2023-03-04 16:46:22.279 -05:00 [INF] Migrating Host side...
+2023-03-04 16:46:22.305 -05:00 [INF] Migrating SaaSService database...
+2023-03-04 16:46:24.108 -05:00 [INF] Migrating AdministrationService database...
+2023-03-04 16:46:24.498 -05:00 [INF] Migrating IdentityService database...
+2023-03-04 16:46:25.692 -05:00 [INF] All databases have been successfully migrated (HOST).
+2023-03-04 16:46:27.487 -05:00 [INF] Migrating tenants...
+2023-03-04 16:46:27.720 -05:00 [INF] Migrating tenants...0
+2023-03-04 16:46:27.721 -05:00 [INF] Migration completed!
+2023-03-04 18:22:38.928 -05:00 [INF] Migrating Host side...
+2023-03-04 18:22:38.956 -05:00 [INF] Migrating SaaSService database...
+2023-03-04 18:22:41.145 -05:00 [INF] Migrating AdministrationService database...
+2023-03-04 18:22:41.673 -05:00 [INF] Migrating IdentityService database...
+2023-03-04 18:22:42.819 -05:00 [INF] All databases have been successfully migrated (HOST).
+2023-03-04 18:22:44.734 -05:00 [INF] Migrating tenants...
+2023-03-04 18:22:44.962 -05:00 [INF] Migrating tenants...0
+2023-03-04 18:22:44.962 -05:00 [INF] Migrating SaaSService database...
+2023-03-04 18:22:45.207 -05:00 [INF] Migrating AdministrationService database...
+2023-03-04 18:22:45.514 -05:00 [INF] Migrating IdentityService database...
+2023-03-04 18:22:45.860 -05:00 [INF] All databases have been successfully migrated (HOST).
+2023-03-04 18:22:45.860 -05:00 [INF] Migration completed!
+2023-03-04 18:30:09.815 -05:00 [INF] Migrating Host side...
+2023-03-04 18:30:09.843 -05:00 [INF] Migrating SaaSService database...
+2023-03-04 18:30:11.998 -05:00 [INF] Migrating AdministrationService database...
+2023-03-04 18:30:12.491 -05:00 [INF] Migrating IdentityService database...
+2023-03-04 18:30:13.612 -05:00 [INF] All databases have been successfully migrated (HOST).
+2023-03-04 18:30:16.169 -05:00 [INF] Migrating tenants...
+2023-03-04 18:30:16.481 -05:00 [INF] Migrating tenants...0
+2023-03-04 18:30:16.481 -05:00 [INF] Migration completed!

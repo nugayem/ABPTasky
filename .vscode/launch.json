@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/services/identity/host/Tasky.IdentityService.HttpApi.Host/bin/Debug/net7.0/Tasky.IdentityService.HttpApi.Host.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/services/identity/host/Tasky.IdentityService.HttpApi.Host",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Docker .NET Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "netCore": {
+                "appProject": "${workspaceFolder}/apps/Tasky.IdentityServer/Tasky.IdentityServer.csproj"
+            }
+        }
+    ]
+}
